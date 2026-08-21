@@ -1,0 +1,55 @@
+<!-- HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Card</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-image">
+        <img src="/img/perfume.png" alt="Perfume">
+      </div>
+
+      <div class="card-content">
+
+        <p class="category">PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+
+        <p class="description">
+          A floral, solar and voluptuous <span class="break">interpretation composed by</span>
+          <span class="break">Olivier Polge, Perfumer-Creator </span> <span class="break">for the House of
+            CHANEL.</span>
+        </p>
+
+        <div class="price">
+          <h2 class="new-price">$149.99</h2>
+          <span class="old-price"><del>$169.99</del></span>
+        </div>
+
+        <button onclick="
+        cartQuantity++;
+        console.log(`Added to Cart`)
+        console.log(`Cart Quantity: ${cartQuantity}`)
+        alert(`Added to Cart`)
+        alert(`Price: $149.99`)
+        "><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let cartQuantity = "0";
+  </script>
+</body>
+
+</html>

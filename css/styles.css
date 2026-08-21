@@ -1,0 +1,280 @@
+/* CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d39960;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    display: flex;
+    max-width: 550px;
+    max-height: 430px;
+    background: white;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(17, 16, 16, 0.1);
+}
+
+.card-image img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    letter-spacing: 4px;
+    font-weight: lighter;
+    color: gray;
+    font-size: 12px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+
+
+
+.description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.new-price {
+    color: #3d8168;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.new-price:hover {
+    color: #26634d;
+}
+
+.old-price {
+    color: gray;
+}
+
+.old-price:hover {
+    color: rgb(169, 167, 167);
+}
+
+button {
+    background: #3d8168;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2e6652;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: row;
+        max-width: 97%;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    .card-image img {
+        width: 93%;
+        height: 100%;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-direction: row;
+        max-width: 100%;
+        width: 97%;
+        max-height: auto;
+        margin: auto;
+    }
+
+    .card-image img {
+        width: 150px;
+        height: 100%;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .card {
+        flex-direction: row;
+        max-width: 98%;
+        width: 98%;
+        max-height: 99%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .card-image img {
+        width: 500px;
+        height: 100%;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        flex-direction: row;
+        max-width: 100%;
+        width: 97%;
+        max-height: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .card-image img {
+        width: 105px;
+        height: 100%;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width:480px, min-width: 240px ) { 
+    .container{
+        object-fit: cover;
+        width: auto;
+    }
+    .card {
+    object-fit: cover;
+    width: auto;
+    }
+
+     .card-image img {
+        width: 10px;
+        height:100%;
+    } 
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+/* Commented */
+
+
+
+/* @media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+        width: 97%;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-content h1 {
+        font-size: 26px;
+    }
+} */
